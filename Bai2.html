@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi feet và Meters</title>
+    <P id="display"></P>
+</head>
+<body>
+<p><label> <input type="number" placeholder="Nhập" id="input"></label> </p>
+<input type="submit" onclick="footMeter()"  value="Chuyển từ feet sang meters">
+<input type="submit" onclick="footfeet()"  value="Chuyển từ meter sang feet">
+<script>
+function footMeter(foot) {
+    foot = document.getElementById("input").value;
+    document.getElementById("display").innerHTML = foot * 0.305 + "meters";
+}
+function footfeet(meters) {
+    meters = document.getElementById("input").value;
+    document.getElementById("display").innerHTML = meters * 3.279 + "feet"
+}
+</script>
+</body>
+</html>
